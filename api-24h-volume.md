@@ -1,5 +1,4 @@
-API for 24h volume
-You can only access the API one time every minute
+API for 24h volume, You can only access the API one time every 60s
 
 ##### Request method
 
