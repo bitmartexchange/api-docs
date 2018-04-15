@@ -19,19 +19,19 @@ print content
 
 ```
 
-##### Return Result
+##### Return result sample
 
 ```json
 {
 	"BMX_ETH": {
 		"priceChange":"-0.000002",
-		"volume":"28977076.7691",
+		"volume":"28977076.7691",  //24h volume denominated in BMX
 		"marketName":"BMX_ETH",
 		"lowPrice":"0.000056",
 		"highPrice":"0.000064",
 		"closeTime":1523644015182,
 		"id":22,
-		"baseVolume":"1757.8032367",
+		"baseVolume":"1757.8032367",  //24h volume denominated in ETH
 		"openTime":1523557615182,
 		"priceChangePercent":"-3.225806",
 		"lastPrice":"0.00006"
