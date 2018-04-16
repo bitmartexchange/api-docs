@@ -31,8 +31,8 @@ print content
     "highPrice": "0.000097",
     "closeTime": 1523911632775,
     "id": 22,
-    "baseVolume": "3538.39579772",  //24h volume denominated in ETH
-    "openTime": 1523825232775,
+    "baseVolume": "3538.39579772",  //24h volume denominated in ETH
+    "openTime": 1523825232775,
     "priceChangePercent": "-6.097561",
     "lastPrice": "0.000077"
   },
