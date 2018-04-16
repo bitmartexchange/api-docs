@@ -23,45 +23,45 @@ print content
 
 ```json
 {
-	"BMX_ETH": {
-		"priceChange":"-0.000002",
-		"volume":"28977076.7691",  //24h volume denominated in BMX
-		"marketName":"BMX_ETH",
-		"lowPrice":"0.000056",
-		"highPrice":"0.000064",
-		"closeTime":1523644015182,
-		"id":22,
-		"baseVolume":"1757.8032367",  //24h volume denominated in ETH
-		"openTime":1523557615182,
-		"priceChangePercent":"-3.225806",
-		"lastPrice":"0.00006"
-	},
-	"MOBI_ETH": {
-		"priceChange":"0.000021",
-		"volume":"2068.7943",
-		"marketName":"MOBI_ETH",
-		"lowPrice":"0.0001",
-		"highPrice":"0.00015",
-		"closeTime":1523644015193,
-		"id":24,
-		"baseVolume":"0.2730309",
-		"openTime":1523557615193,
-		"priceChangePercent":"18.75",
-		"lastPrice":"0.000133"
-	},
-	"XLM_ETH": {
-		"priceChange":"0.00002",
-		"volume":"2139.0326",
-		"marketName":"XLM_ETH",
-		"lowPrice":"0.00049",
-		"highPrice":"0.00058",
-		"closeTime":1523644015187,
-		"id":23,
-		"baseVolume":"1.1272803",
-		"openTime":1523557615187,
-		"priceChangePercent":"3.636364",
-		"lastPrice":"0.00057"
-	}
+  "BMX_ETH": {
+    "priceChange": "-0.000005",
+    "volume": "41645962.413491",  //24h volume denominated in BMX
+    "marketName": "BMX_ETH",
+    "lowPrice": "0.000076",
+    "highPrice": "0.000097",
+    "closeTime": 1523911632775,
+    "id": 22,
+    "baseVolume": "3538.39579772",  //24h volume denominated in ETH
+    "openTime": 1523825232775,
+    "priceChangePercent": "-6.097561",
+    "lastPrice": "0.000077"
+  },
+  "MOBI_ETH": {
+    "priceChange": "-0.000003",
+    "volume": "472.8677",
+    "marketName": "MOBI_ETH",
+    "lowPrice": "0.000133",
+    "highPrice": "0.000138",
+    "closeTime": 1523911632786,
+    "id": 24,
+    "baseVolume": "0.0646678",
+    "openTime": 1523825232786,
+    "priceChangePercent": "-2.205882",
+    "lastPrice": "0.000133"
+  },
+  "XLM_ETH": {
+    "priceChange": "0.000007",
+    "volume": "1377.84822",
+    "marketName": "XLM_ETH",
+    "lowPrice": "0.000549",
+    "highPrice": "0.0006",
+    "closeTime": 1523911632780,
+    "id": 23,
+    "baseVolume": "0.79392244",
+    "openTime": 1523825232780,
+    "priceChangePercent": "1.211073",
+    "lastPrice": "0.000585"
+  }
 }
 ```
 
