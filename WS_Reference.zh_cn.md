@@ -91,7 +91,7 @@ websocket URL https://ws.bitmart.com/
 }
 
 取消订阅:
-取消订阅: {"subscribe":"kline_cancel", "symbol":12, "step": 3}
+{"subscribe":"kline_cancel", "symbol":12, "step": 3}
 
 ```
 ##### 返回值
@@ -158,7 +158,8 @@ websocket URL https://ws.bitmart.com/
 }
 }
 
-取消订阅: {"subscribe":"depth_cancel", "symbol":12, "percision": 8}
+取消订阅:
+{"subscribe":"depth_cancel", "symbol":12, "percision": 8}
 
 ```
 ##### 参数
@@ -198,7 +199,8 @@ websocket URL https://ws.bitmart.com/
   }
 }
 
-取消订阅: {"subscribe":"trade_cancel", "symbol":12, "precision": 8}
+取消订阅:
+{"subscribe":"trade_cancel", "symbol":12, "precision": 8}
 
 ```
 ##### 参数

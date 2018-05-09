@@ -27,7 +27,7 @@ broadcast:
     "c":"0.0000100",
     "increase":"1",
     "fluctuation":"-0.05",
-    "rate":"0"
+    "rate":"0",
     "sign":"USD"
   }
 }
@@ -90,7 +90,7 @@ broadcast:
 }
 
 cancel subscription:
-cancel subscription: {"subscribe":"kline_cancel", "symbol":12, "step": 3}
+{"subscribe":"kline_cancel", "symbol":12, "step": 3}
 
 ```
 ##### Sub Parameters
@@ -157,7 +157,8 @@ broadcast:
 }
 }
 
-cancel subscription: {"subscribe":"depth_cancel", "symbol":12, "percision": 8}
+cancel subscription:
+{"subscribe":"depth_cancel", "symbol":12, "percision": 8}
 
 ```
 ##### Sub Parameters
@@ -181,7 +182,7 @@ cancel subscription: {"subscribe":"depth_cancel", "symbol":12, "percision": 8}
 
 
 
-#### 4 实时成交
+#### 4 Real-time Trading info
 
 ```json
 subscription:
@@ -197,7 +198,8 @@ broadcast:
   }
 }
 
-cancel subscription: {"subscribe":"trade_cancel", "symbol":12, "precision": 8}
+cancel subscription:
+{"subscribe":"trade_cancel", "symbol":12, "precision": 8}
 
 ```
 ##### Sub Parameters

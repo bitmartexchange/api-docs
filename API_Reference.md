@@ -316,7 +316,7 @@ GET https://api.bitmart.com/market/depth?symbol=2&precision=8
 
 
 
-#### 6 查询某个交易对 成交 数据
+#### 6 Trading info
 ##### Example
 ```json
 # Request
