@@ -194,7 +194,7 @@ broadcast:
   "symbol":12,
   "percision": 6,
   "data":{
-    "trades": [{isBuy: "0", amount: "0.000001", price: "0.0001000", time: 13333333}]
+    "trades": [{"isBuy": "0", "amount": "0.000001", "price": "0.0001000", "time": 13333333}]
   }
 }
 

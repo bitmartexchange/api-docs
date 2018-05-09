@@ -28,7 +28,7 @@ websocket URL https://ws.bitmart.com/
     "c":"0.0000100",
     "increase":"1",
     "fluctuation":"-0.05",
-    "rate":"0"
+    "rate":"0",
     "sign":"USD"
   }
 }
@@ -195,7 +195,7 @@ websocket URL https://ws.bitmart.com/
   "symbol":12,
   "percision": 6,
   "data":{
-    "trades": [{isBuy: "0", amount: "0.000001", price: "0.0001000", time: 13333333}]
+    "trades": [{"isBuy": "0", "amount": "0.000001", "price": "0.0001000", "time": 13333333}]
   }
 }
 
