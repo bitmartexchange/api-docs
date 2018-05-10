@@ -14,7 +14,7 @@ GET https://api.bitmart.com/tickers/market_cap
 [{
   "priceChange": "0%",
   "symbolId": 20,
-  "website": "https://www.bitmart.com/trade.html?symbol=22",
+  "url": "https://www.bitmart.com/trade.html?symbol=22",
   "high_24h": "0.004000",
   "low_24h": "0.004000",
   "new_24h": "0.004000",
@@ -37,7 +37,7 @@ NULL
 | Filed | Description |
 |:-------------:|:-------------|
 |symbolId       | trading pair id
-|website | trading pair address
+|url | trading pair address
 |priceChange | price change within 24 hours
 |high_24h | highest price within 24 hours
 |low_24h |  lowest price within 24 hours
@@ -76,7 +76,6 @@ GET https://api.bitmart.com/tickers/coin
   {
   "coinName": "ETH",
   "coinId": 12,
-  "website" : "https://www.bitmart.com/",
   "coinFullName": "Ethereum",
   }
 ]
@@ -117,7 +116,7 @@ GET https://api.bitmart.com/ticker/{pair}
 {
   "priceChange": "0%",
   "symbolId": 20,
-  "website": "https://www.bitmart.com/trade.html?symbol=22",
+  "url": "https://www.bitmart.com/trade.html?symbol=22",
   "high_24h": "0.004000",
   "low_24h": "0.004000",
   "new_24h": "0.004000",
@@ -143,7 +142,7 @@ GET https://api.bitmart.com/ticker/{pair}
 | Filed | Description |
 |:-------------:|:-------------|
 |symbolId       | trading pair id
-|website | trading pair website
+|url | trading pair url
 |priceChange | price change within 24 hours
 |high_24h | highest price within 24 hours
 |low_24h |  lowest price within 24 hours

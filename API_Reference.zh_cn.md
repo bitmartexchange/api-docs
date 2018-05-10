@@ -14,7 +14,7 @@ GET https://api.bitmart.com/tickers/market_cap
 [{
   "priceChange": "0%",
   "symbolId": 20,
-  "website": "https://www.bitmart.com/trade.html?symbol=22",
+  "url": "https://www.bitmart.com/trade.html?symbol=22",
   "high_24h": "0.004000",
   "low_24h": "0.004000",
   "new_24h": "0.004000",
@@ -37,7 +37,7 @@ NULL
 | Field | Description |
 |:-------------:|:-------------|
 |symbolId       | 交易对id
-|website | 交易对地址
+|url | 交易对地址
 |priceChange | 24小时涨幅百分比
 |high_24h | 24小时最高价格
 |low_24h |  24小时最低价格
@@ -76,7 +76,6 @@ GET https://api.bitmart.com/tickers/coin
   {
   "coinName": "ETH",
   "coinId": 12,
-  "website" : "https://www.bitmart.com/",
   "coinFullName": "Ethereum",
   }
 ]
@@ -117,7 +116,7 @@ GET https://api.bitmart.com/ticker/{pair}
 {
   "priceChange": "0%",
   "symbolId": 20,
-  "website": "https://www.bitmart.com/trade.html?symbol=22",
+  "url": "https://www.bitmart.com/trade.html?symbol=22",
   "high_24h": "0.004000",
   "low_24h": "0.004000",
   "new_24h": "0.004000",
@@ -143,7 +142,7 @@ GET https://api.bitmart.com/ticker/{pair}
 | Field | Description |
 |:-------------:|:-------------|
 |symbolId       | 交易对id
-|website | 交易对地址
+|url | 交易对地址
 |priceChange | 24小时涨幅百分比
 |high_24h | 24小时最高价格
 |low_24h |  24小时最低价格
