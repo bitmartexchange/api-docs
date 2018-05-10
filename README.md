@@ -8,6 +8,6 @@ Read reference in other languages:
     * [简体中文](API_Reference.zh_cn.md)
 * Web Socket
     * [English](WS_Reference.md)
-    * [简体中文](WS_Reference.zn_cn.md)
+    * [简体中文](WS_Reference.zh_cn.md)
 
 See [`api.bitmart.com`](api.bitmart.com) & [`ws.bitmart.com`](ws.bitmart.com) for API & WS updates, outages and scheduled maintenance.
