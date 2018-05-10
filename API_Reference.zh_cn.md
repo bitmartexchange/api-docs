@@ -232,7 +232,6 @@ GET https://api.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=15
 |:-------------:|:-------------:|:-------------|
 |symbol | 交易対类型id | Query |
 |from   | 开始时间的时间戳,精确到秒 | Query |
-|sourceTimeZone | 时区，如：北京时间, GMT+08 | Query |
 |to | 结束时间的时间戳,精确到秒 | Query |
 |step | 周期 | Query |
 
