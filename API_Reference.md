@@ -178,7 +178,7 @@ GET https://api.bitmart.com/ticker/{pair}
 ##### Example
 ```json
 # Request
-GET https://api.bitmart.com/market/kline?sourceTimeZone=GMT+08&symbol=22&step=15&from=1525760116&to=1525769116
+GET https://api.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=1525769116
 
 # Response
 {
@@ -233,7 +233,6 @@ GET https://api.bitmart.com/market/kline?sourceTimeZone=GMT+08&symbol=22&step=15
 |:-------------:|:-------------:|:-------------|
 |symbol | trading pair id | Query |
 |from   | timestamp, second | Query |
-|sourceTimeZone | timezone, e.g.: GMT+08 | Query |
 |to | timestamp, second | Query |
 |step | optional, default: 1m | Query |
 
@@ -287,8 +286,58 @@ GET https://api.bitmart.com/market/depth?symbol=2&precision=8
 
 # Response
 {
-  "sells":[{"amount":"0.001","total":"123.993","price":"1.09","count":"12"}],
-   "buys":[{"amount":"90.001","total":"923.993","price":"8.09","count":"14"}]
+    "buys": [
+        {
+            "amount": "12.09",
+            "total": "14835.90",
+            "price": "0.01013000",
+            "count": "5"
+        },
+        {
+            "amount": "0.07",
+            "total": "0.07",
+            "price": "0.00600000",
+            "count": "1"
+        },
+        {
+            "amount": "80.00",
+            "total": "40.00",
+            "price": "0.00101300",
+            "count": "2"
+        },
+        {
+            "amount": "0.07",
+            "total": "0.07",
+            "price": "0.00000800",
+            "count": "1"
+        },
+        {
+            "amount": "1.00",
+            "total": "1.00",
+            "price": "0.00000100",
+            "count": "1"
+        }
+    ],
+    "sells": [
+        {
+            "amount": "1.00",
+            "total": "1.00",
+            "price": "0.87531000",
+            "count": "1"
+        },
+        {
+            "amount": "20.00",
+            "total": "20.00",
+            "price": "0.90000000",
+            "count": "1"
+        },
+        {
+            "amount": "50.00",
+            "total": "50.00",
+            "price": "0.91000000",
+            "count": "1"
+        }
+    ]
 }
 ```
 ##### Request Parameters
@@ -303,8 +352,8 @@ GET https://api.bitmart.com/market/depth?symbol=2&precision=8
 |sells | trade type: sell
 |buys | trade type: buy
 |amount | amount
-|total | total
 |price | price
+|total | total
 |count | count
 
 
@@ -316,7 +365,7 @@ GET https://api.bitmart.com/market/depth?symbol=2&precision=8
 
 
 
-#### 6 Trading info
+#### 6 Latest 20 deals
 ##### Example
 ```json
 # Request
@@ -324,10 +373,8 @@ GET https://api.bitmart.com/market/deal?symbol=2
 
 # Response
 [{
-  "symbolName": "ETH/XLM",
   "amount": "0.001900",
   "createTime": 1523457226000,
-  "count": "10.000000",
   "entrustType": 1,
   "price": "0.000190"
 }]
@@ -340,10 +387,8 @@ GET https://api.bitmart.com/market/deal?symbol=2
 ##### Return Values
 | Filed | Description |
 |:-------------:|:-------------|
-|symbolName | trading pair name
 |amount| total amount = price * count
 |price | price
-|count | count
 |entrustType| 0 buy，1 sell
 |createTime| timestamp, second
 

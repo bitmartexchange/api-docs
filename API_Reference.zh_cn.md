@@ -178,7 +178,7 @@ GET https://api.bitmart.com/ticker/{pair}
 ##### 请求样例
 ```json
 # 请求
-GET https://api.bitmart.com/market/kline?sourceTimeZone=GMT+08&symbol=22&step=15&from=1525760116&to=1525769116
+GET https://api.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=1525769116
 
 # 响应
 {
@@ -287,8 +287,58 @@ GET https://api.bitmart.com/market/depth?symbol=2&precision=8
 
 # 响应
 {
-  "sells":[{"amount":"0.001","total":"123.993","price":"1.09","count":"12"}],
-   "buys":[{"amount":"90.001","total":"923.993","price":"8.09","count":"14"}]
+    "buys": [
+        {
+            "amount": "12.09",
+            "total": "14835.90",
+            "price": "0.01013000",
+            "count": "5"
+        },
+        {
+            "amount": "0.07",
+            "total": "0.07",
+            "price": "0.00600000",
+            "count": "1"
+        },
+        {
+            "amount": "80.00",
+            "total": "40.00",
+            "price": "0.00101300",
+            "count": "2"
+        },
+        {
+            "amount": "0.07",
+            "total": "0.07",
+            "price": "0.00000800",
+            "count": "1"
+        },
+        {
+            "amount": "1.00",
+            "total": "1.00",
+            "price": "0.00000100",
+            "count": "1"
+        }
+    ],
+    "sells": [
+        {
+            "amount": "1.00",
+            "total": "1.00",
+            "price": "0.87531000",
+            "count": "1"
+        },
+        {
+            "amount": "20.00",
+            "total": "20.00",
+            "price": "0.90000000",
+            "count": "1"
+        },
+        {
+            "amount": "50.00",
+            "total": "50.00",
+            "price": "0.91000000",
+            "count": "1"
+        }
+    ]
 }
 ```
 ##### 请求参数
@@ -304,6 +354,7 @@ GET https://api.bitmart.com/market/depth?symbol=2&precision=8
 |buys | 买单
 |amount | 数量
 |price | 金额
+|total | 总交易金额
 |count | 委托单数量
 
 
@@ -315,7 +366,7 @@ GET https://api.bitmart.com/market/depth?symbol=2&precision=8
 
 
 
-#### 6 查询某个交易对 成交 数据
+#### 6 查询某个交易对最近20条成交数据
 ##### 请求样例
 ```json
 # 请求
@@ -323,10 +374,8 @@ GET https://api.bitmart.com/market/deal?symbol=2
 
 # 响应
 [{
-  "symbolName": "ETH/XLM",
   "amount": "0.001900",
   "createTime": 1523457226000,
-  "count": "10.000000",
   "entrustType": 1,
   "price": "0.000190"
 }]
@@ -339,10 +388,8 @@ GET https://api.bitmart.com/market/deal?symbol=2
 ##### 返回值
 | Field | Description |
 |:-------------:|:-------------|
-|symbolName |交易对的名称
 |amount| 金额
 |price | 单价
-|count | 数量
 |entrustType| 0买单，1卖单
 |createTime| 精确到秒的时间戳
 
