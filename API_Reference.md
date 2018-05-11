@@ -11,23 +11,27 @@ API URL https://api.bitmart.com/
 GET https://api.bitmart.com/tickers/market_cap
 
 # Response
-[{
-  "priceChange": "0%",
-  "symbolId": 20,
-  "url": "https://www.bitmart.com/trade.html?symbol=22",
-  "high_24h": "0.004000",
-  "low_24h": "0.004000",
-  "new_24h": "0.004000",
-  "pair": "BMX_ETH",
-  "anchorId": 16,
-  "anchorName": "ETH",
-  "coinId": 18,
-  "coinName": "BMX",
-  "volume": "249.986378",
-  "baseVolume": "1.114146",
-  "openTime": 1524105824549,
-  "closeTime": 1524192224549
-}]
+[
+   {
+      "priceChange":"0%",
+      "symbolId":45,
+      "ask_1":"0.00000000",
+      "anchorId":2,
+      "anchorName":"BTC",
+      "pair":"ABT_BTC",
+      "url":"https://www.bitmart.com/trade.html?symbol=45",
+      "volume":"12.00000000",
+      "coinId":24,
+      "high_24h":"0.00120000",
+      "low_24h":"0.00120000",
+      "new_24h":"0.00120000",
+      "closeTime":1526047108022,
+      "bid_1":"0.00140000",
+      "coinName":"ABT",
+      "baseVolume":"0.01440000",
+      "openTime":1525960708022
+   }
+]
 ```
 
 ##### Request Parameters
@@ -51,6 +55,8 @@ NULL
 |baseVolume | target volume
 |openTime | open time
 |closeTime | close time
+|ask_1 | asked price
+|bit_1 | bid price
 
 
 
@@ -73,11 +79,11 @@ GET https://api.bitmart.com/tickers/coin
 
 # Response
 [
-  {
-  "coinName": "ETH",
-  "coinId": 12,
-  "coinFullName": "Ethereum",
-  }
+   {
+      "coinName":"ETH",
+      "coinId":12,
+      "coinFullName":"Ethereum"
+   }
 ]
 ```
 ##### Request Parameters
@@ -114,21 +120,23 @@ GET https://api.bitmart.com/ticker/{pair}
 
 # Response
 {
-  "priceChange": "0%",
-  "symbolId": 20,
-  "url": "https://www.bitmart.com/trade.html?symbol=22",
-  "high_24h": "0.004000",
-  "low_24h": "0.004000",
-  "new_24h": "0.004000",
-  "pair": "BMX_ETH",
-  "anchorId": 16,
-  "anchorName": "ETH",
-  "coinId": 18,
-  "coinName": "BMX",
-  "volume": "249.986378",
-  "baseVolume": "1.114146",
-  "openTime": 1524105824549,
-  "closeTime": 1524192224549
+   "priceChange":"0%",
+   "symbolId":22,
+   "ask_1":"0.004811",
+   "anchorId":16,
+   "anchorName":"ETH",
+   "pair":"BMX_ETH",
+   "url":"https://www.bitmart.com/trade.html?symbol=22",
+   "volume":"560356.868000",
+   "coinId":18,
+   "high_24h":"0.004811",
+   "low_24h":"0.004811",
+   "new_24h":"0.004811",
+   "closeTime":1526047727412,
+   "bid_1":"0.004811",
+   "coinName":"BMX",
+   "baseVolume":"2542.024679",
+   "openTime":1525961327412
 }
 ```
 
@@ -156,6 +164,8 @@ GET https://api.bitmart.com/ticker/{pair}
 |baseVolume | target volume
 |openTime | open time
 |closeTime | close time
+|ask_1 | asked price
+|bit_1 | bid price
 
 
 
@@ -181,49 +191,49 @@ GET https://api.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=15
 
 # Response
 {
-  "c": [
-    177,
-    177.04,
-    177.22,
-    177.11,
-    171.11
-  ],
-  "s": "ok",
-  "t": [
-    1516579200,
-    1516665600,
-    1516752000,
-    1516838400,
-    1516924800
-  ],
-  "v": [
-    26023622,
-    26523681,
-    26622200,
-    26722213,
-    36722213
-  ],
-  "h": [
-    177.78,
-    177.18,
-    176.78,
-    176.38,
-    176.18
-  ],
-  "l": [
-    176.6016,
-    175.6016,
-    174.6016,
-    173.6016,
-    171.6016
-  ],
-  "o": [
-    177.3,
-    177.3,
-    177.25,
-    177.25,
-    177.35
-  ]
+   "c":[
+      177,
+      177.04,
+      177.22,
+      177.11,
+      171.11
+   ],
+   "s":"ok",
+   "t":[
+      1516579200,
+      1516665600,
+      1516752000,
+      1516838400,
+      1516924800
+   ],
+   "v":[
+      26023622,
+      26523681,
+      26622200,
+      26722213,
+      36722213
+   ],
+   "h":[
+      177.78,
+      177.18,
+      176.78,
+      176.38,
+      176.18
+   ],
+   "l":[
+      176.6016,
+      175.6016,
+      174.6016,
+      173.6016,
+      171.6016
+   ],
+   "o":[
+      177.3,
+      177.3,
+      177.25,
+      177.25,
+      177.35
+   ]
 }
 ```
 
@@ -285,58 +295,58 @@ GET https://api.bitmart.com/market/depth?symbol=2&precision=8
 
 # Response
 {
-    "buys": [
-        {
-            "amount": "12.09",
-            "total": "14835.90",
-            "price": "0.01013000",
-            "count": "5"
-        },
-        {
-            "amount": "0.07",
-            "total": "0.07",
-            "price": "0.00600000",
-            "count": "1"
-        },
-        {
-            "amount": "80.00",
-            "total": "40.00",
-            "price": "0.00101300",
-            "count": "2"
-        },
-        {
-            "amount": "0.07",
-            "total": "0.07",
-            "price": "0.00000800",
-            "count": "1"
-        },
-        {
-            "amount": "1.00",
-            "total": "1.00",
-            "price": "0.00000100",
-            "count": "1"
-        }
-    ],
-    "sells": [
-        {
-            "amount": "1.00",
-            "total": "1.00",
-            "price": "0.87531000",
-            "count": "1"
-        },
-        {
-            "amount": "20.00",
-            "total": "20.00",
-            "price": "0.90000000",
-            "count": "1"
-        },
-        {
-            "amount": "50.00",
-            "total": "50.00",
-            "price": "0.91000000",
-            "count": "1"
-        }
-    ]
+   "buys":[
+      {
+         "amount":"12.09",
+         "total":"14835.90",
+         "price":"0.01013000",
+         "count":"5"
+      },
+      {
+         "amount":"0.07",
+         "total":"0.07",
+         "price":"0.00600000",
+         "count":"1"
+      },
+      {
+         "amount":"80.00",
+         "total":"40.00",
+         "price":"0.00101300",
+         "count":"2"
+      },
+      {
+         "amount":"0.07",
+         "total":"0.07",
+         "price":"0.00000800",
+         "count":"1"
+      },
+      {
+         "amount":"1.00",
+         "total":"1.00",
+         "price":"0.00000100",
+         "count":"1"
+      }
+   ],
+   "sells":[
+      {
+         "amount":"1.00",
+         "total":"1.00",
+         "price":"0.87531000",
+         "count":"1"
+      },
+      {
+         "amount":"20.00",
+         "total":"20.00",
+         "price":"0.90000000",
+         "count":"1"
+      },
+      {
+         "amount":"50.00",
+         "total":"50.00",
+         "price":"0.91000000",
+         "count":"1"
+      }
+   ]
 }
 ```
 ##### Request Parameters
@@ -371,12 +381,14 @@ GET https://api.bitmart.com/market/depth?symbol=2&precision=8
 GET https://api.bitmart.com/market/deal?symbol=2
 
 # Response
-[{
-  "amount": "0.001900",
-  "createTime": 1523457226000,
-  "entrustType": 1,
-  "price": "0.000190"
-}]
+[
+   {
+      "amount":"0.001900",
+      "createTime":1523457226000,
+      "entrustType":1,
+      "price":"0.000190"
+   }
+]
 ```
 ##### Request Parameters
 | Parameters | Description | Type |
