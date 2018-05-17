@@ -12,12 +12,12 @@ Response: {"subscribe":"pong"}
 
 ```json
 subscribe:
-{"subscribe":"price", "symbol":12, "local": "zh_CN"}
+{"subscribe":"price", "symbol":22, "local": "zh_CN"}
 
 broadcast:
 {
   "subscribe":"price",
-  "symbol": 12,
+  "symbol": 22,
   "local": "zh_US",
   "data":{
     "o":"0.0000100",
@@ -33,7 +33,7 @@ broadcast:
 }
 
 cancel subscription:
-{"subscribe":"price_cancel", "symbol":12}
+{"subscribe":"price_cancel", "symbol":22}
 
 ```
 ##### Sub Parameters
@@ -72,12 +72,12 @@ cancel subscription:
 
 ```json
 subscribe:
-{"subscribe":"kline", "symbol":12, "step": 3}
+{"subscribe":"kline", "symbol":22, "step": 3}
 
 broadcast:
 {
   "subscribe":"kline",
-  "symbol": 12,
+  "symbol": 22,
   "step": 3,
   "data":{
     "o":"0.0000100",
@@ -90,7 +90,7 @@ broadcast:
 }
 
 cancel subscription:
-{"subscribe":"kline_cancel", "symbol":12, "step": 3}
+{"subscribe":"kline_cancel", "symbol":22, "step": 3}
 
 ```
 ##### Sub Parameters
@@ -144,12 +144,12 @@ cancel subscription:
 
 ```json
 subscription:
-{"subscribe":"depth", "symbol":12, "percision": 8}
+{"subscribe":"depth", "symbol":22, "percision": 8}
 
 broadcast:
 {
 "subscribe":"depth",
-"symbol":12,
+"symbol":22,
 "precision": 6,
 "data":{
 "sells":[{"amount":"0.001","total":"123.993","price":"1.09","count":"12","positions":"12"}],
@@ -158,7 +158,7 @@ broadcast:
 }
 
 cancel subscription:
-{"subscribe":"depth_cancel", "symbol":12, "percision": 8}
+{"subscribe":"depth_cancel", "symbol":22, "percision": 8}
 
 ```
 ##### Sub Parameters
@@ -186,12 +186,12 @@ cancel subscription:
 
 ```json
 subscription:
-{"subscribe":"trade", "symbol":12, "precision": 8}
+{"subscribe":"trade", "symbol":22, "precision": 8}
 
 broadcast:
 {
   "subscribe":"trade",
-  "symbol":12,
+  "symbol":22,
   "percision": 6,
   "data":{
     "trades": [{"isBuy": "0", "amount": "0.000001", "price": "0.0001000", "time": 13333333}]
@@ -199,7 +199,7 @@ broadcast:
 }
 
 cancel subscription:
-{"subscribe":"trade_cancel", "symbol":12, "precision": 8}
+{"subscribe":"trade_cancel", "symbol":22, "precision": 8}
 
 ```
 ##### Sub Parameters
@@ -215,7 +215,7 @@ cancel subscription:
 |:-------------:|:-------------|
 |amount| amount
 |price | price
-|isBuy| 0 buy, 1 sell 
+|isBuy| 0 buy, 1 sell
 |time| timestamp, second
 
 

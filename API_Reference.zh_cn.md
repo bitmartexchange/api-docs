@@ -1,4 +1,4 @@
-# Bitmart API 说明文档 
+# Bitmart API 说明文档
 
 API URL https://api.bitmart.com/
 
@@ -81,7 +81,7 @@ GET https://api.bitmart.com/tickers/coin
 [
    {
       "coinName":"ETH",
-      "coinId":12,
+      "coinId":16,
       "coinFullName":"Ethereum"
    }
 ]
@@ -291,7 +291,7 @@ GET https://api.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=15
 ##### 请求样例
 ```json
 # 请求
-GET https://api.bitmart.com/market/depth?symbol=2&precision=8
+GET https://api.bitmart.com/market/depth?symbol=22&precision=8
 
 # 响应
 {
@@ -378,13 +378,13 @@ GET https://api.bitmart.com/market/depth?symbol=2&precision=8
 ##### 请求样例
 ```json
 # 请求
-GET https://api.bitmart.com/market/deal?symbol=2
+GET https://api.bitmart.com/market/deal?symbol=22
 
 # 响应
 [
    {
       "amount":"0.001900",
-      "createTime":1523457226000,
+      "createTime":1526539240000,
       "entrustType":1,
       "price":"0.000190"
    }

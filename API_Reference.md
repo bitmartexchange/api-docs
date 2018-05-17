@@ -12,25 +12,25 @@ GET https://api.bitmart.com/tickers/market_cap
 
 # Response
 [
-   {
-      "priceChange":"0%",
-      "symbolId":45,
-      "ask_1":"0.00000000",
-      "anchorId":2,
-      "anchorName":"BTC",
-      "pair":"ABT_BTC",
-      "url":"https://www.bitmart.com/trade.html?symbol=45",
-      "volume":"12.00000000",
-      "coinId":24,
-      "high_24h":"0.00120000",
-      "low_24h":"0.00120000",
-      "new_24h":"0.00120000",
-      "closeTime":1526047108022,
-      "bid_1":"0.00140000",
-      "coinName":"ABT",
-      "baseVolume":"0.01440000",
-      "openTime":1525960708022
-   }
+  {
+    priceChange: "4.21%",
+    symbolId: 45,
+    website: "https://www.bitmart.com/trade.html?symbol=45",
+    ask_1: "0.00013000",
+    anchorId: 2,
+    anchorName: "BTC",
+    pair: "ABT_BTC",
+    volume: "23383.38200980",
+    coinId: 24,
+    high_24h: "0.00013090",
+    low_24h: "0.00012000",
+    new_24h: "0.00012827",
+    closeTime: 1526539974569,
+    bid_1: "0.00012810",
+    coinName: "ABT",
+    baseVolume: "2.91795127",
+    openTime: 1526453574569
+  }
 ]
 ```
 
@@ -81,7 +81,7 @@ GET https://api.bitmart.com/tickers/coin
 [
    {
       "coinName":"ETH",
-      "coinId":12,
+      "coinId":16,
       "coinFullName":"Ethereum"
    }
 ]
@@ -291,7 +291,7 @@ GET https://api.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=15
 ##### Example
 ```json
 # Request
-GET https://api.bitmart.com/market/depth?symbol=2&precision=8
+GET https://api.bitmart.com/market/depth?symbol=22&precision=8
 
 # Response
 {
@@ -378,13 +378,13 @@ GET https://api.bitmart.com/market/depth?symbol=2&precision=8
 ##### Example
 ```json
 # Request
-GET https://api.bitmart.com/market/deal?symbol=2
+GET https://api.bitmart.com/market/deal?symbol=22
 
 # Response
 [
    {
       "amount":"0.001900",
-      "createTime":1523457226000,
+      "createTime":1526539240000,
       "entrustType":1,
       "price":"0.000190"
    }

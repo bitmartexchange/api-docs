@@ -13,12 +13,12 @@ websocket URL https://ws.bitmart.com/
 
 ```json
 订阅:
-{"subscribe":"price", "symbol":12, "local": "zh_CN"}
+{"subscribe":"price", "symbol":22, "local": "zh_CN"}
 
 广播:
 {
   "subscribe":"price",
-  "symbol": 12,
+  "symbol": 22,
   "local": "zh_US",
   "data":{
     "o":"0.0000100",
@@ -34,7 +34,7 @@ websocket URL https://ws.bitmart.com/
 }
 
 取消订阅:
-{"subscribe":"price_cancel", "symbol":12}
+{"subscribe":"price_cancel", "symbol":22}
 
 ```
 ##### 参数
@@ -73,12 +73,12 @@ websocket URL https://ws.bitmart.com/
 
 ```json
 订阅:
-{"subscribe":"kline", "symbol":12, "step": 3}
+{"subscribe":"kline", "symbol":22, "step": 3}
 
 广播:
 {
   "subscribe":"kline",
-  "symbol": 12,
+  "symbol": 22,
   "step": 3,
   "data":{
     "o":"0.0000100",
@@ -91,7 +91,7 @@ websocket URL https://ws.bitmart.com/
 }
 
 取消订阅:
-{"subscribe":"kline_cancel", "symbol":12, "step": 3}
+{"subscribe":"kline_cancel", "symbol":22, "step": 3}
 
 ```
 ##### 返回值
@@ -145,12 +145,12 @@ websocket URL https://ws.bitmart.com/
 
 ```json
 订阅:
-{"subscribe":"depth", "symbol":12, "percision": 8}
+{"subscribe":"depth", "symbol":22, "percision": 8}
 
 广播:
 {
 "subscribe":"depth",
-"symbol":12,
+"symbol":22,
 "precision": 6,
 "data":{
 "sells":[{"amount":"0.001","total":"123.993","price":"1.09","count":"12","positions":"12"}],
@@ -159,7 +159,7 @@ websocket URL https://ws.bitmart.com/
 }
 
 取消订阅:
-{"subscribe":"depth_cancel", "symbol":12, "percision": 8}
+{"subscribe":"depth_cancel", "symbol":22, "percision": 8}
 
 ```
 ##### 参数
@@ -187,12 +187,12 @@ websocket URL https://ws.bitmart.com/
 
 ```json
 订阅:
-{"subscribe":"trade", "symbol":12, "precision": 8}
+{"subscribe":"trade", "symbol":22, "precision": 8}
 
 广播:
 {
   "subscribe":"trade",
-  "symbol":12,
+  "symbol":22,
   "percision": 6,
   "data":{
     "trades": [{"isBuy": "0", "amount": "0.000001", "price": "0.0001000", "time": 13333333}]
@@ -200,7 +200,7 @@ websocket URL https://ws.bitmart.com/
 }
 
 取消订阅:
-{"subscribe":"trade_cancel", "symbol":12, "precision": 8}
+{"subscribe":"trade_cancel", "symbol":22, "precision": 8}
 
 ```
 ##### 参数
