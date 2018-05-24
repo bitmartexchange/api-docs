@@ -19,7 +19,7 @@ GET https://api.bitmart.com/tickers/market_cap
       "anchorId":2,
       "anchorName":"BTC",
       "pair":"ABT_BTC",
-      "url":"https://www.bitmart.com/trade.html?symbol=45",
+      "url":"https://www.bitmart.com/trade.html?symbol=22",
       "volume":"12.00000000",
       "coinId":24,
       "high_24h":"0.00120000",
@@ -29,7 +29,9 @@ GET https://api.bitmart.com/tickers/market_cap
       "bid_1":"0.00140000",
       "coinName":"ABT",
       "baseVolume":"0.01440000",
-      "openTime":1525960708022
+      "openTime":1525960708022,
+      "depthStartPrecision": 4,
+      "depthEndPrecision": 6
    }
 ]
 ```
@@ -57,8 +59,8 @@ NULL
 |closeTime | 收盘时间
 |ask_1 | 卖一价
 |bid_1 | 买一价
-
-
+|depthStartPrecision | 最小深度精度
+|depthEndPrecision | 最大深度精度
 
 
 
@@ -136,7 +138,9 @@ GET https://api.bitmart.com/ticker/{pair}
    "bid_1":"0.004811",
    "coinName":"BMX",
    "baseVolume":"2542.024679",
-   "openTime":1525961327412
+   "openTime":1525961327412,
+   "depthStartPrecision": 4,
+   "depthEndPrecision": 6
 }
 ```
 
@@ -166,7 +170,8 @@ GET https://api.bitmart.com/ticker/{pair}
 |closeTime | 收盘时间
 |ask_1 | 卖一价
 |bid_1 | 买一价
-
+|depthStartPrecision | 最小深度精度
+|depthEndPrecision | 最大深度精度
 
 
 
@@ -291,7 +296,7 @@ GET https://api.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=15
 ##### 请求样例
 ```json
 # 请求
-GET https://api.bitmart.com/market/depth?symbol=22&precision=8
+GET https://api.bitmart.com/market/depth?symbol=22&precision=6
 
 # 响应
 {
@@ -353,7 +358,7 @@ GET https://api.bitmart.com/market/depth?symbol=22&precision=8
 | Parameters | Description | Type
 |:-------------:|:-------------:|:-------------|
 |symbol | 交易対类型id | Query
-|precision  | 精度，默认：8 | Query |
+|precision  | 精度 | Query |
 
 ##### 返回值
 | Field | Description |

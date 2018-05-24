@@ -29,7 +29,9 @@ GET https://api.bitmart.com/tickers/market_cap
     bid_1: "0.00012810",
     coinName: "ABT",
     baseVolume: "2.91795127",
-    openTime: 1526453574569
+    openTime: 1526453574569,
+    depthStartPrecision: 4,
+    depthEndPrecision: 6
   }
 ]
 ```
@@ -57,7 +59,8 @@ NULL
 |closeTime | close time
 |ask_1 | asked price
 |bit_1 | bid price
-
+|depthStartPrecision | start precision for depth
+|depthEndPrecision | end precision for depth
 
 
 
@@ -136,7 +139,9 @@ GET https://api.bitmart.com/ticker/{pair}
    "bid_1":"0.004811",
    "coinName":"BMX",
    "baseVolume":"2542.024679",
-   "openTime":1525961327412
+   "openTime":1525961327412,
+   "depthStartPrecision": 4,
+   "depthEndPrecision": 6
 }
 ```
 
@@ -166,7 +171,8 @@ GET https://api.bitmart.com/ticker/{pair}
 |closeTime | close time
 |ask_1 | asked price
 |bit_1 | bid price
-
+|depthStartPrecision | start precision for depth
+|depthEndPrecision | end precision for depth
 
 
 
@@ -291,7 +297,7 @@ GET https://api.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=15
 ##### Example
 ```json
 # Request
-GET https://api.bitmart.com/market/depth?symbol=22&precision=8
+GET https://api.bitmart.com/market/depth?symbol=22&precision=6
 
 # Response
 {
@@ -353,7 +359,7 @@ GET https://api.bitmart.com/market/depth?symbol=22&precision=8
 | Parameters | Description | Type |
 |:-------------:|:-------------:|:-------------|
 |symbol | trading pair id | Query |
-|precision  | optional, default: 8 | Query |
+|precision  | optional | Query |
 
 ##### Return Values
 | Filed | Description |
