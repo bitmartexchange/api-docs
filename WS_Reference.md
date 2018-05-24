@@ -3,7 +3,7 @@
 websocket URL https://ws.bitmart.com/
 
 #### Heartbeat
-REquest: {"subscribe":"ping"}
+Request: {"subscribe":"ping"}
 Response: {"subscribe":"pong"}
 
 
