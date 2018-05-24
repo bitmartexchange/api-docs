@@ -56,7 +56,7 @@ NULL
 |openTime | 开盘时间
 |closeTime | 收盘时间
 |ask_1 | 卖一价
-|bid_1 | 卖一价
+|bid_1 | 买一价
 
 
 
@@ -165,7 +165,7 @@ GET https://api.bitmart.com/ticker/{pair}
 |openTime | 开盘时间
 |closeTime | 收盘时间
 |ask_1 | 卖一价
-|bid_1 | 卖一价
+|bid_1 | 买一价
 
 
 
