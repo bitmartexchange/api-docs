@@ -510,7 +510,7 @@ broadcast:
 }
 
 cancel subscription:
-{"subscribe":"depth_cancel", "symbol":22, "percision": 8}
+{"subscribe":"depth_cancel", "symbol":22, "percision": 6}
 
 ```
 ##### Sub Parameters
@@ -642,7 +642,7 @@ broadcast:
 }
 
 cancel subscription:
-{"subscribe":"trade_cancel", "symbol":22, "precision": 8}
+{"subscribe":"trade_cancel", "symbol":22, "precision": 6}
 
 ```
 ##### Sub Parameters
