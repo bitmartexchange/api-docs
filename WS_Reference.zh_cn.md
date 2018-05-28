@@ -511,7 +511,7 @@ WebSocket URL wss://ws.bitmart.com/
 }
 
 取消订阅:
-{"subscribe":"depth_cancel", "symbol":22, "percision": 8}
+{"subscribe":"depth_cancel", "symbol":22, "percision": 6}
 
 ```
 ##### 参数
@@ -643,7 +643,7 @@ WebSocket URL wss://ws.bitmart.com/
 }
 
 取消订阅:
-{"subscribe":"trade_cancel", "symbol":22, "precision": 8}
+{"subscribe":"trade_cancel", "symbol":22, "precision": 6}
 
 ```
 ##### 参数
