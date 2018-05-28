@@ -1,9 +1,11 @@
 # Bitmart WebSocket Reference
 
-websocket URL https://ws.bitmart.com/
+WebSocket URL wss://ws.bitmart.com/
 
 #### Heartbeat
+
 Request: {"subscribe":"ping"}
+
 Response: {"subscribe":"pong"}
 
 
@@ -144,7 +146,7 @@ cancel subscription:
 
 ```json
 subscription:
-{"subscribe":"depth", "symbol":22, "percision": 8}
+{"subscribe":"depth", "symbol":22, "precision": 8}
 
 broadcast:
 {
