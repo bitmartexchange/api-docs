@@ -1,4 +1,4 @@
-# Ws Reference
+# BitMart WebSocket说明文档
 采用订阅的模式
 
 WebSocket URL wss://ws.bitmart.com/
