@@ -1,10 +1,12 @@
 # Ws Reference
 采用订阅的模式
 
-websocket URL https://ws.bitmart.com/
+WebSocket URL wss://ws.bitmart.com/
 
 #### 心跳
+
 发送: {"subscribe":"ping"}
+
 返回: {"subscribe":"pong"}
 
 
@@ -145,7 +147,7 @@ websocket URL https://ws.bitmart.com/
 
 ```json
 订阅:
-{"subscribe":"depth", "symbol":22, "percision": 8}
+{"subscribe":"depth", "symbol":22, "precision": 8}
 
 广播:
 {
