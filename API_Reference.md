@@ -390,6 +390,7 @@ GET https://api.bitmart.com/market/deal?symbol=22
 [
    {
       "amount":"0.001900",
+      "count":"120",
       "createTime":1526539240000,
       "entrustType":1,
       "price":"0.000190"
@@ -405,6 +406,7 @@ GET https://api.bitmart.com/market/deal?symbol=22
 | Filed | Description |
 |:-------------:|:-------------|
 |amount| total amount = price * count
+|count|count
 |price | price
 |entrustType| 0 buy，1 sell
 |createTime| timestamp, second

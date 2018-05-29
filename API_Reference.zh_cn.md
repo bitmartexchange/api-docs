@@ -389,6 +389,7 @@ GET https://api.bitmart.com/market/deal?symbol=22
 [
    {
       "amount":"0.001900",
+      "count":"120",
       "createTime":1526539240000,
       "entrustType":1,
       "price":"0.000190"
@@ -404,6 +405,7 @@ GET https://api.bitmart.com/market/deal?symbol=22
 | Field | Description |
 |:-------------:|:-------------|
 |amount| 金额
+|count| 数量
 |price | 单价
 |entrustType| 0买单，1卖单
 |createTime| 精确到秒的时间戳
