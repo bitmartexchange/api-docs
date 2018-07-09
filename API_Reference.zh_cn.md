@@ -1,6 +1,6 @@
 # Bitmart API 说明文档
 
-API URL https://api.bitmart.com/
+API URL https://api.open.bitmart.com/
 
 #### 1 查询所有交易对
 

@@ -1,6 +1,6 @@
 # API Reference
 
-API URL https://api.bitmart.com/
+API URL https://api.open.bitmart.com/
 
 #### 1 Trading Pairs
 
