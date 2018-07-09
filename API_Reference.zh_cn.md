@@ -8,11 +8,11 @@ API URL https://api.bitmart.com/
 ##### 请求样例
 ```json
 # 请求
-GET https://api.bitmart.com/tickers/market_cap
+GET https://api.open.bitmart.com/tickers/market_cap
 
 # 响应
-[  
-   {  
+[
+   {
       "priceChange":"4.21%",
       "symbolId":45,
       "website":"https://www.bitmart.com/trade.html?symbol=45",
@@ -77,7 +77,7 @@ NULL
 ##### 请求样例
 ```json
 # 请求
-GET https://api.bitmart.com/tickers/coin
+GET https://api.open.bitmart.com/tickers/coin
 
 # 响应
 [
@@ -118,7 +118,7 @@ NULL
 ##### 请求样例
 ```json
 # 请求
-GET https://api.bitmart.com/ticker/{pair}
+GET https://api.open.bitmart.com/ticker/{pair}
 
 # 响应
 {
@@ -192,7 +192,7 @@ GET https://api.bitmart.com/ticker/{pair}
 ##### 请求样例
 ```json
 # 请求
-GET https://api.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=1525769116
+GET https://api.open.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=1525769116
 
 # 响应
 {
@@ -296,7 +296,7 @@ GET https://api.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=15
 ##### 请求样例
 ```json
 # 请求
-GET https://api.bitmart.com/market/depth?symbol=22&precision=6
+GET https://api.open.bitmart.com/market/depth?symbol=22&precision=6
 
 # 响应
 {
@@ -383,7 +383,7 @@ GET https://api.bitmart.com/market/depth?symbol=22&precision=6
 ##### 请求样例
 ```json
 # 请求
-GET https://api.bitmart.com/market/deal?symbol=22
+GET https://api.open.bitmart.com/market/deal?symbol=22
 
 # 响应
 [

@@ -8,11 +8,11 @@ API URL https://api.bitmart.com/
 ##### Example
 ```json
 # Request
-GET https://api.bitmart.com/tickers/market_cap
+GET https://api.open.bitmart.com/tickers/market_cap
 
 # Response
-[  
-   {  
+[
+   {
       "priceChange":"4.21%",
       "symbolId":45,
       "website":"https://www.bitmart.com/trade.html?symbol=45",
@@ -78,7 +78,7 @@ NULL
 ##### Example
 ```json
 # Request
-GET https://api.bitmart.com/tickers/coin
+GET https://api.open.bitmart.com/tickers/coin
 
 # Response
 [
@@ -119,7 +119,7 @@ NULL
 ##### Example
 ```json
 # Request
-GET https://api.bitmart.com/ticker/{pair}
+GET https://api.open.bitmart.com/ticker/{pair}
 
 # Response
 {
@@ -193,7 +193,7 @@ GET https://api.bitmart.com/ticker/{pair}
 ##### Example
 ```json
 # Request
-GET https://api.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=1525769116
+GET https://api.open.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=1525769116
 
 # Response
 {
@@ -297,7 +297,7 @@ GET https://api.bitmart.com/market/kline?symbol=22&step=15&from=1525760116&to=15
 ##### Example
 ```json
 # Request
-GET https://api.bitmart.com/market/depth?symbol=22&precision=6
+GET https://api.open.bitmart.com/market/depth?symbol=22&precision=6
 
 # Response
 {
@@ -384,7 +384,7 @@ GET https://api.bitmart.com/market/depth?symbol=22&precision=6
 ##### Example
 ```json
 # Request
-GET https://api.bitmart.com/market/deal?symbol=22
+GET https://api.open.bitmart.com/market/deal?symbol=22
 
 # Response
 [
