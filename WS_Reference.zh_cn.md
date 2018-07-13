@@ -21,7 +21,7 @@ WebSocket URL wss://ws.bitmart.com/
 {
   "subscribe":"price",
   "symbol": 22,
-  "local": "zh_US",
+  "local": "zh_CN",
   "data":{
     "o":"0.0000100",
     "h":"0.0000100",
@@ -36,7 +36,7 @@ WebSocket URL wss://ws.bitmart.com/
 }
 
 取消订阅:
-{"subscribe":"price_cancel", "symbol":22}
+{"subscribe":"price_cancel", "symbol":22, "local": "zh_CN"}
 
 ```
 ##### 参数
