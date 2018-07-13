@@ -14,13 +14,13 @@ Response: {"subscribe":"pong"}
 
 ```json
 subscribe:
-{"subscribe":"price", "symbol":22, "local": "zh_CN"}
+{"subscribe":"price", "symbol":22, "local": "en_US"}
 
 broadcast:
 {
   "subscribe":"price",
   "symbol": 22,
-  "local": "zh_US",
+  "local": "en_US",
   "data":{
     "o":"0.0000100",
     "h":"0.0000100",
@@ -35,7 +35,7 @@ broadcast:
 }
 
 cancel subscription:
-{"subscribe":"price_cancel", "symbol":22}
+{"subscribe":"price_cancel", "symbol":22, "local": "en_US"}
 
 ```
 ##### Sub Parameters
