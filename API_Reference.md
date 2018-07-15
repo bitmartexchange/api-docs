@@ -123,25 +123,25 @@ GET https://openapi.bitmart.com/ticker/{pair}
 
 # Response
 {
-   "priceChange":"0%",
-   "symbolId":22,
-   "ask_1":"0.004811",
-   "anchorId":16,
-   "anchorName":"ETH",
-   "pair":"BMX_ETH",
-   "url":"https://www.bitmart.com/trade.html?symbol=22",
-   "volume":"560356.868000",
-   "coinId":18,
-   "high_24h":"0.004811",
-   "low_24h":"0.004811",
-   "new_24h":"0.004811",
-   "closeTime":1526047727412,
-   "bid_1":"0.004811",
-   "coinName":"BMX",
-   "baseVolume":"2542.024679",
-   "openTime":1525961327412,
+   "priceChange": "0.31%",
+   "symbolId": 46,
+   "website": "https://www.bitmart.com/trade?symbol=ABT_ETH",
+   "depthEndPrecision": 6,
+   "ask_1": "0.000974",
+   "anchorId": 16,
+   "anchorName": "ETH",
+   "pair": "ABT_ETH",
+   "volume": "163735.740000",
+   "coinId": 24,
    "depthStartPrecision": 4,
-   "depthEndPrecision": 6
+   "high_24h": "0.001245",
+   "low_24h": "0.000840",
+   "new_24h": "0.000972",
+   "closeTime": 1531678421082,
+   "bid_1": "0.000965",
+   "coinName": "ABT",
+   "baseVolume": "151.491076",
+   "openTime": 1531592021082
 }
 ```
 
