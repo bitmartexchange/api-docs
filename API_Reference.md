@@ -13,26 +13,26 @@ GET https://openapi.bitmart.com/tickers/market_cap
 # Response
 [
    {
-      "priceChange":"4.21%",
-      "symbolId":45,
-      "website":"https://www.bitmart.com/trade.html?symbol=45",
-      "ask_1":"0.00013000",
-      "anchorId":2,
-      "anchorName":"BTC",
-      "pair":"ABT_BTC",
-      "volume":"23383.38200980",
-      "coinId":24,
-      "high_24h":"0.00013090",
-      "low_24h":"0.00012000",
-      "new_24h":"0.00012827",
-      "closeTime":1526539974569,
-      "bid_1":"0.00012810",
-      "coinName":"ABT",
-      "baseVolume":"2.91795127",
-      "openTime":1526453574569,
-      "depthStartPrecision":4,
-      "depthEndPrecision":6
-   }
+      "priceChange": "1.26%",
+      "symbolId": 45,
+      "website": "https://www.bitmart.com/trade?symbol=ABT_BTC",
+      "depthEndPrecision": 8,
+      "ask_1": "0.00006922",
+      "anchorId": 2,
+      "anchorName": "BTC",
+      "pair": "ABT_BTC",
+      "volume": "207961.00000000",
+      "coinId": 24,
+      "depthStartPrecision": 6,
+      "high_24h": "0.00008922",
+      "low_24h": "0.00005870",
+      "new_24h": "0.00006854",
+      "closeTime": 1531678097969,
+      "bid_1": "0.00006800",
+      "coinName": "ABT",
+      "baseVolume": "13.44652201",
+      "openTime": 1531591697969
+   },
 ]
 ```
 
