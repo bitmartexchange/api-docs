@@ -10,4 +10,4 @@ Read reference in other languages:
     * [English](WS_Reference.md)
     * [简体中文](WS_Reference.zh_cn.md)
 
-See [`api.bitmart.com`](api.bitmart.com) & [`ws.bitmart.com`](ws.bitmart.com) for API & WS updates, outages and scheduled maintenance.
+See [`https://openapi.bitmart.com/`](https://openapi.bitmart.com/) & [`ws.bitmart.com`](ws.bitmart.com) for API & WS updates, outages and scheduled maintenance.
